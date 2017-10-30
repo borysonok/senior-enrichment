@@ -1,14 +1,33 @@
-'use strict'
-import React from 'react'
-import {render} from 'react-dom'
-import { Provider } from 'react-redux'
+"use strict";
 
-import store from './store'
-import Root from './components/Root'
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./components/App";
 
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+);
+
+/////////////////////////////////////////////////////////////////////
+///////////////////////// USING REDUX ///////////////////////////////
+/////////////////////////////////////////////////////////////////////
+
+// This Old Version uses Redux...
+
+//import {render} from 'react-dom'
+//import { Provider } from 'react-redux'
+//import store from './store'
+//import Root from './components/Root'
+
+/*
 render (
   <Provider store={store}>
     <Root/>
   </Provider>,
   document.getElementById('main')
 )
+*/
+
+/////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
